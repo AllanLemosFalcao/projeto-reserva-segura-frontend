@@ -26,8 +26,8 @@ Aplicativo gamificado de educação financeira que ensina crianças e jovens a p
 | Recurso | Link |
 |---------|------|
 | 🌐 Aplicação em Produção | [projeto-reserva-segura-front-end.vercel.app](https://projeto-reserva-segura-front-end.vercel.app/) |
-| 🎨 Repositório Front-End | [Projeto-Reserva-Segura_Take-Off](https://github.com/EdmaelBarretto/Projeto-Reserva-Segura_Take-Off) |
-| ⚙️ Repositório Back-End | [ProjetoReservaSegura_Back-End](https://github.com/EdmaelBarretto/ProjetoReservaSegura_Back-End) |
+| 🎨 Repositório Front-End | [projeto-reserva-segura-frontend](https://github.com/AllanLemosFalcao/projeto-reserva-segura-frontend) |
+| ⚙️ Repositório Back-End | [ProjetoReservaSegura_Back-End-main](https://github.com/AllanLemosFalcao/ProjetoReservaSegura_Back-End-main) |
 | 🛡️ Repositório QA | [Reserva-Segura-QA](https://github.com/EdmaelBarretto/Reserva-Segura-QA) |
 
 ---
@@ -68,8 +68,8 @@ Reserva Segura é uma plataforma educacional que combina gamificação com educa
 ### 2. Clonar o Projeto
 
 ```bash
-git clone https://github.com/EdmaelBarretto/Projeto-Reserva-Segura_Take-Off.git
-cd Projeto-Reserva-Segura_Take-Off/Front-Reserva
+git clone [https://github.com/AllanLemosFalcao/projeto-reserva-segura-frontend.git](https://github.com/AllanLemosFalcao/projeto-reserva-segura-frontend.git)
+cd projeto-reserva-segura-frontend
 ```
 
 ### 3. Instalar Dependências
@@ -80,11 +80,14 @@ npm install
 
 ### 4. Configurar variável de ambiente
 
+Como o foco é rodar a aplicação localmente, o frontend deve apontar para o seu backend rodando na sua própria máquina (porta 8080). 
+
 Crie um arquivo `.env.local` na raiz do projeto:
 
+```env
+VITE_API_URL=http://localhost:8080
 ```
-VITE_API_URL=https://projetoreservaseguraback-end-production.up.railway.app
-```
+*(Se no futuro você quiser testar com o backend em produção, altere o link para a URL do Railway).*
 
 ### 5. Executar o Projeto
 
@@ -98,7 +101,7 @@ O aplicativo estará disponível em: `http://localhost:5173`
 
 ## 📁 Estrutura do Projeto
 
-```
+```text
 Front-Reserva/
 ├── src/
 │   ├── app/
